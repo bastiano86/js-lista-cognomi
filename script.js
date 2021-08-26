@@ -7,8 +7,8 @@ let listaCognomi = ['Bianchi','Neri','Rossi','Verdi','Gialli'];
 let cognomeInserito = prompt('Inserisci un cognome');
 listaCognomi.unshift (cognomeInserito);
 
-listaCognomi.sort(function (a, b) { return a.localeCompare(b); });
+listaCognomi.sort(function (a, b) { return a.localeCompare(b);});
 
 for (let contatore = 0 ; contatore<listaCognomi.length ; contatore++ ) {
-console.log (listaCognomi + (contatore + 1));
+    console.log (listaCognomi[contatore], contatore + 1) ;
 }
