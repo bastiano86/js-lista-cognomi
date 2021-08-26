@@ -4,9 +4,11 @@
 // scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
 
 let listaCognomi = ['Bianchi','Neri','Rossi','Verdi','Gialli'];
-
 let cognomeInserito = prompt('Inserisci un cognome');
-
 listaCognomi.unshift (cognomeInserito);
 
-console.log (listaCognomi);
+listaCognomi.sort(function (a, b) { return a.localeCompare(b); });
+
+for (let contatore = 0 ; contatore<listaCognomi.length ; contatore++ ) {
+console.log (listaCognomi + (contatore + 1));
+}
