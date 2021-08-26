@@ -7,6 +7,6 @@ let listaCognomi = ['Bianchi','Neri','Rossi','Verdi','Gialli'];
 
 let cognomeInserito = prompt('Inserisci un cognome');
 
-unshift.listaCognomi (cognomeInserito);
+listaCognomi.unshift (cognomeInserito);
 
 console.log (listaCognomi);
